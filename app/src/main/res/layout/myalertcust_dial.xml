@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_size">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images6"
+        android:id="@+id/image1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is custom title service"
+        android:id="@+id/text_view1"
+        android:layout_below="@+id/image1"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearance"/>
+
+    <ImageButton
+        android:text="OK"
+        android:id="@+id/buttonok"
+        android:layout_below="@+id/text_view1"
+        android:src="@drawable/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

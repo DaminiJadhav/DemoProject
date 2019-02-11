@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".internal_storage_activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/txt_1"
+        android:padding="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_1"
+        android:id="@+id/edit_text1"
+        android:padding="40dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="70dp"
+        android:text="save"
+
+        android:id="@+id/buton2"
+        android:padding="16dp"
+        android:onClick="save"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/txt_2"
+        android:layout_below="@+id/txt_1"
+        android:padding="40dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="241dp"
+        android:layout_height="91dp"
+        android:layout_below="@+id/edit_text1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="-14dp"
+        android:layout_toRightOf="@+id/txt_2"
+        android:inputType="textPassword"
+        android:padding="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text2"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="84dp"
+        android:layout_toRightOf="@+id/buton2"
+        android:onClick="next"
+        android:padding="16dp"
+        android:text="Go to B" />
+
+
+</RelativeLayout>

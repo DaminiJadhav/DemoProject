@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36AC5B"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Login_Screen">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_user_name"
+        style="@style/til_style">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed1"
+            style="@style/et_style"
+            android:hint="Username"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtlayout"
+        style="@style/til_style"
+        android:layout_below="@+id/til_user_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed2"
+            style="@style/et_style"
+            android:layout_marginTop="15dp"
+            android:hint="@string/password"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sign_in"
+        style="@style/btn_login_style"
+        android:text="@string/sign_in"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/colorWhite" />
+
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/et_style"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/create_account"
+        android:textColor="@color/tv_gray" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/et_style"
+        android:layout_marginTop="@dimen/margin_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/view_back_color"></View>
+
+        <TextView
+            style="@style/txt_or"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/tv_gray" />
+
+        <View
+           style="@style/view_back_color"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        style="@style/linear_img_txt"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal">
+
+        <ImageView
+          style="@style/iv_sign_in_style"
+            android:src="@drawable/facebook_logo" />
+
+
+        <TextView
+            style="@style/et_style"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sign_in_with_facebook"
+            android:textColor="@color/tv_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+       style="@style/linear_img_txt"
+        android:layout_below="@+id/linear3"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/iv_sign_in_style"
+            android:src="@drawable/google_plus" />
+
+        <TextView
+           style="@style/et_style"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sign_in_with_google"
+            android:textColor="@color/tv_gray"/>
+    </LinearLayout>
+
+
+</LinearLayout>

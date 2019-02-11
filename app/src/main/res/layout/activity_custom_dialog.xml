@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomDialog">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show dialog"
+        android:id="@+id/buton"
+        android:onClick="showdialog"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show dialog 1"
+        android:layout_below="@+id/buton"
+        android:id="@+id/buton1"
+        android:onClick="showdialog1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/group1"
+        android:layout_below="@+id/buton1"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+
+</RelativeLayout>

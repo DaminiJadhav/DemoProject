@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".file_storage_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"
+        android:id="@+id/usertxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usereditxt"
+        android:layout_below="@+id/usertxt"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usereditxt"
+        android:text="Internal Cache"
+        android:layout_centerInParent="true"
+        android:id="@+id/int_but"
+        android:onClick="internal_cache"
+        android:padding="18dp"/>
+
+    <Button
+        android:id="@+id/ext_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/int_but"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp"
+        android:text="External Cache"
+        android:onClick="external_cache"
+        android:padding="18dp"/>
+
+    <Button
+        android:id="@+id/ext_but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usereditxt"
+        android:padding="18dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="49dp"
+        android:onClick="external_private"
+        android:text="External Private" />
+
+    <Button
+        android:id="@+id/ext_but2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ext_but1"
+        android:layout_centerInParent="true"
+        android:padding="18dp"
+        android:layout_marginTop="55dp"
+        android:onClick="external_public_file"
+        android:text="External Public" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ext_but2"
+        android:layout_centerInParent="true"
+        android:padding="18dp"
+        android:onClick="next"
+        android:layout_margin="5dp"
+        android:text="Next" />
+</RelativeLayout>

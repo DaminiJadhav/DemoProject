@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyTask1"
+    android:background="#ffcc00">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="20dp"
+        android:id="@+id/url_path"
+        android:focusable="false"/>
+
+    <ProgressBar
+        android:id="@+id/pro_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/url_path"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:indeterminate="false"
+        android:max="100" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/url_path"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout1"
+        android:layout_margin="20dp">
+
+
+
+        <Button
+            android:id="@+id/down_but1"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:text="Download_Image" />
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:background="#eedddd"
+            android:entries="@array/urls"></ListView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

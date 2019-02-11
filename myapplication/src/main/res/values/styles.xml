@@ -1,0 +1,110 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="red">#fdf9f9</color>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="style_toolbar" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="title" >
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="title.expanded">
+        <item name="android:textSize">30dp</item>
+    </style>
+    <style name="title.collapsed">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+
+
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+
+    </style>
+
+    <style name="TextLabel">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">#f5f2f2</item>
+        <item name="colorControlActivated">#b6b3b2</item>
+
+    </style>
+
+    <style name="MyAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/colorAccent</item>
+
+    </style>
+
+    <style name="til_style">
+        <item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+
+
+    </style>
+
+    <style name="et_style" parent="match_wrap">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_regular</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="btn_login_style" parent="match_wrap">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/roboto_regular</item>
+        <item name="android:background">@drawable/btn_shape</item>
+    </style>
+
+    <style name="linear_img_txt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@drawable/btn_shape</item>
+    </style>
+
+    <style name="iv_sign_in_style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_gravity">center</item>
+      <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="view_back_color">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="txt_or" parent="et_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="view_match">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>
+
